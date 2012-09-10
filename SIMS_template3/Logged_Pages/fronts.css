@@ -1,0 +1,59 @@
+﻿body {
+}
+
+#Hedding
+{
+	background:#000000;
+	height:50px;
+	width:960PX;
+	color:#FFFFFF;
+	font-size:x-large;
+	padding-left:5px;
+	padding-top:10px;
+	
+}
+.HeaderDisc
+{
+color:#000000;
+background:#C0C0C0;
+font-size:small;
+padding-left:10px;
+padding-top:5px;
+width:960PX;
+height:30px;	
+}
+#CtrlPanel
+{
+	background:#FFFFFF;
+	height:50px;
+	width:960PX;
+	color:#000000;
+	padding:5px;
+	padding-left:35px;
+	
+	
+}
+.linker
+{
+	background:#FFFFFF;
+	height:100px;
+	width:150PX;
+	color:#000000;
+	padding-top:10px;
+	padding-left:30px;
+	list-style:none;
+	display:inline;	
+}
+.img
+{
+	height:70px;
+	width:123px;	
+}
+.txt
+{
+	height:20px;
+	width:140px;
+	font-size:medium;
+	background:#000000;
+	color:#FFFFFF;		
+}

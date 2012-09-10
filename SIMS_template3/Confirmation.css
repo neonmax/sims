@@ -1,0 +1,121 @@
+﻿body{
+	background-color:#ECF5FB;
+	background-image:url(Images/Stage_BG_btm.png);
+	background-position:center bottom;
+	background-repeat:repeat-x;
+	font-family:Tahoma,Verdana,Segoe,sans-serif;
+	font-size:70%;
+	padding-bottom:20px;
+}
+
+.Container
+{
+	margin:auto;
+	min-height:400px;
+	background:#ffffff;
+	max-width:500px;
+	min-width:500px;
+	border:solid 1px #d4d4d4;
+	padding:0 20px 20px 20px;
+}
+
+.ToolBar
+{
+	border:solid 1px #d4d4d4;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+.GridContainer
+{
+	background:#ECF5FB;
+	min-height:300px;
+	border:solid 1px #d4d4d4;
+}
+
+
+.ModalPopupBG
+{
+	background-color: #ECF5FB;	
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+.HellowWorldPopup
+{
+    min-width:300px;
+    min-height:250px;
+    background:LightBlue;
+}
+
+.popup_Container {
+	background-color:Transparent;
+	border:2px solid #000000;
+	padding: 0px 0px 0px 0px;
+	width: 320px;
+	height: 110px;
+}
+
+.popupConfirmation
+{
+	width: 320px;
+	height: 110px;
+	background-color:White;
+}
+
+.popup_Titlebar 
+{
+	width: 320px;
+	height: 25px;
+	background-color:#314e90;
+	text-decoration: none;
+}
+
+.popup_Body
+{
+	font-family:Arial;
+	font-weight:normal;
+	font-size:12px;
+	color:Black;
+	line-height:15pt;
+	clear:both;
+	height: 25px;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+.TitlebarLeft 
+{
+	float:left;
+	background-color:#314e90;
+	padding-left:5px;
+	padding-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:White;
+}
+.TitlebarRight 
+{
+	background-position:right;
+	background-repeat:no-repeat;
+	background-color:#314e90;
+	height:15px;
+	width:16px;
+	float:right;
+	cursor:pointer;
+	margin-right:5px;
+	margin-top:5px;
+}
+
+.popup_Buttons
+{
+	padding: 3px 10px;
+	margin-bottom:5px;
+	margin-left:0px;
+	margin-top:18px;
+	background-color: #314e90;
+	color: #314e90;
+	font-weight: bold;
+	font-size: 12px;
+}

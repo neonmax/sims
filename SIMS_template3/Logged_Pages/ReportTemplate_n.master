@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ReportTemplate_n.master.cs"
+    Inherits="Logged_Pages_ReportTemplate" %>
+
+<%@ Register Assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>School Information Management System</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <script type="text/javascript" src="../lib/jquery-1.3.2.min.js"></script>
+
+    <script type="text/javascript" src="../lib/jquery.tools.js"></script>
+
+    <link href="styles_n.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div id="wrap">
+                <div id="header">
+                    <div id="logo2">
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="SessionTxt" runat="server" Text="Session Name" Font-Bold="False" Font-Names="Arial"
+                            Font-Size="Medium" ForeColor="White"></asp:Label>
+                        <br />
+                        <asp:LinkButton ID="LnkLogout" runat="server" ForeColor="Yellow">Logout</asp:LinkButton>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="form">
+                        <div class="repBanner">
+                            <div class="BannerSpace">
+                            </div>
+                            <div class="BannerText">
+                                Student Individual Achivement Report
+                            </div>
+                        </div>
+                        <div class="Reportdescription">
+                            You have to give a description about this report. It&#39;ll helps to understand
+                            the outcome of this report.</div>
+                        <div class="ParaHead">
+                        </div>
+                        <div class="ParaMiddle">
+                            <div class="field_3_Row">
+                                <div class="fieldsCaptionCell">
+                                    <asp:Label ID="Label1" runat="server" Text="Grade"></asp:Label>
+                                </div>
+                                <div class="fieldsElementCell">
+                                    <asp:DropDownList ID="DropDownList1" runat="server" Width="180px">
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="fieldsCaptionCell">
+                                    <asp:Label ID="Label2" runat="server" Text="Class"></asp:Label>
+                                </div>
+                                <div class="fieldsElementCell">
+                                    <asp:DropDownList ID="DropDownList2" runat="server" Width="180px">
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="fieldsCaptionCell">
+                                    <asp:Label ID="Label3" runat="server" Text="Student ID"></asp:Label>
+                                </div>
+                                <asp:DropDownList ID="DropDownList3" runat="server" Width="180px">
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="ParaBottom">
+                        </div>
+                        <div class="RepViewHead">
+                        </div>
+                        <div class="RepViewMiddle">
+                            <div class="ReportContent">
+                                <CR:CrystalReportViewer ID="CrystalRep1" runat="server" AutoDataBind="true" Width="940px"
+                                    Height="550px" oninit="CrystalRep1_Init" />
+                                <asp:Panel ID="yourRepHere" runat="server" BackImageUrl="~/Logged_Pages/images/yourReportHere.jpg"
+                                    Height="200px" Width="940px">
+                                </asp:Panel>
+                            </div>
+                        </div>
+                        <div class="ParaBottom">
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="con_bot">
+                </div>
+                <div id="footer">
+                    <p>
+                        All rights reserved
+                        <!-- Please DO NOT remove the following notice -->
+                        <p>
+                            Design by SLIIT SEWD 02</p>
+                        <!-- end of copyright notice-->
+                </div>
+            </div>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
